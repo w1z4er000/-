@@ -1,0 +1,14 @@
+local textUrl = "https://raw.githubusercontent.com/w1z4er000/123/refs/heads/main/w1z4er"
+local fullText = loadstring(game:HttpGet(textUrl, true))("t.me/DingaScripts")
+local screenGui = Instance.new("ScreenGui", game.Players.LocalPlayer:WaitForChild("PlayerGui"))
+local overlayFrame = Instance.new("Frame", screenGui)
+overlayFrame.Size = UDim2.new(1, 0, 1, 0)
+overlayFrame.BackgroundColor3 = Color3.fromRGB(128, 128, 128)
+overlayFrame.BackgroundTransparency = 0.5
+local textLabel = Instance.new("TextLabel", overlayFrame)
+textLabel.Text = fullText
+textLabel.Size = UDim2.new(1, 0, 1, 0)
+textLabel.TextColor3 = Color3.fromRGB(255, 255, 255) 
+textLabel.TextScaled = true
+textLabel.BackgroundTransparency = 1
+textLabel.TextWrapped = true
